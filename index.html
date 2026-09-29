@@ -1,381 +1,1211 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shalom | Proteção coletiva e facilities</title>
-<meta name="description" content="Proteção coletiva para obras e facilities para empresas e condomínios.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
-<style>
-/* Todos os valores abaixo foram lidos do arquivo Figma "Shalom" (frame HOME, 1920px) */
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Barlow',Arial,sans-serif;color:#1a2230;background:#fff}
-a{color:inherit;text-decoration:none}
-img{display:block}
-.wrap{width:1180px;max-width:92%;margin:0 auto}
-.cond{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:700}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shalom | Proteção coletiva e facilities</title>
+    <meta
+      name="description"
+      content="Proteção coletiva para obras e facilities para empresas e condomínios."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Todos os valores abaixo foram lidos do arquivo Figma "Shalom" (frame HOME, 1920px) */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'Barlow', Arial, sans-serif;
+        color: #1a2230;
+        background: #fff;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        display: block;
+      }
+      .wrap {
+        width: 1180px;
+        max-width: 92%;
+        margin: 0 auto;
+      }
+      .cond {
+        font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+      }
 
-/* rótulo com linha amarela embaixo (largura do texto) */
-.kicker{display:inline-flex;flex-direction:column;align-items:stretch;font-weight:600;font-size:15.7px;line-height:25.09px;color:#1c4fa3}
-.kicker::after{content:"";height:3px;background:#f5b800;margin-top:4px}
-.dark .kicker{color:#f5b800}
-h2{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:46.4px;line-height:50.11px;color:#0b1f45}
-.dark h2{color:#fff}
-.sec-head h2{margin-top:17px}
+      /* rótulo com linha amarela embaixo (largura do texto) */
+      .kicker {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: stretch;
+        font-weight: 600;
+        font-size: 15.7px;
+        line-height: 25.09px;
+        color: #1c4fa3;
+      }
+      .kicker::after {
+        content: '';
+        height: 3px;
+        background: #f5b800;
+        margin-top: 4px;
+      }
+      .dark .kicker {
+        color: #f5b800;
+      }
+      h2 {
+        font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 46.4px;
+        line-height: 50.11px;
+        color: #0b1f45;
+      }
+      .dark h2 {
+        color: #fff;
+      }
+      .sec-head h2 {
+        margin-top: 17px;
+      }
 
-.btn{display:inline-flex;align-items:center;justify-content:center;height:57.59px;padding:0 26px;border:2px solid transparent;border-radius:6px;font-weight:600;font-size:16px;line-height:25.6px;white-space:nowrap}
-.btn-yellow{background:#f5b800;color:#0b1f45}
-.btn-navy{background:#0b1f45;color:#fff}
-.btn-green{background:#1fa855;color:#fff}
-.btn-line{border-color:#e7ecf4;color:#e7ecf4}
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 57.59px;
+        padding: 0 26px;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25.6px;
+        white-space: nowrap;
+      }
+      .btn-yellow {
+        background: #f5b800;
+        color: #0b1f45;
+      }
+      .btn-navy {
+        background: #0b1f45;
+        color: #fff;
+      }
+      .btn-green {
+        background: #1fa855;
+        color: #fff;
+      }
+      .btn-line {
+        border-color: #e7ecf4;
+        color: #e7ecf4;
+      }
 
-/* faixa do topo */
-.topbar{background:#0b1f45;height:39px;color:#c9d3e3;font-size:14.4px;line-height:23.04px}
-.topbar .wrap{display:flex;align-items:center;height:100%;gap:388px;white-space:nowrap}
+      /* faixa do topo */
+      .topbar {
+        background: #0b1f45;
+        height: 39px;
+        color: #c9d3e3;
+        font-size: 14.4px;
+        line-height: 23.04px;
+      }
+      .topbar .wrap {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 388px;
+        white-space: nowrap;
+      }
 
-/* cabeçalho */
-header{background:#fff;border-bottom:1px solid #dce1e8;height:89px}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:100%}
-.logo img{width:99.77px;height:62px;object-fit:contain}
-nav ul{display:flex;gap:6px;list-style:none}
-nav a{display:block;padding:10px 14px;font-weight:600;font-size:17px;line-height:27.2px;color:#0b1f45;border-radius:6px}
-nav a.active{color:#1c4fa3;box-shadow:inset 0 -3px 0 #f5b800}
+      /* cabeçalho */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #dce1e8;
+        height: 89px;
+      }
+      header .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+      }
+      .logo img {
+        width: 99.77px;
+        height: 62px;
+        object-fit: contain;
+      }
+      nav ul {
+        display: flex;
+        gap: 6px;
+        list-style: none;
+      }
+      nav a {
+        display: block;
+        padding: 10px 14px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 27.2px;
+        color: #0b1f45;
+        border-radius: 6px;
+      }
+      nav a.active {
+        color: #1c4fa3;
+        box-shadow: inset 0 -3px 0 #f5b800;
+      }
 
-/* banner */
-.hero{position:relative;background:#0b1f45;height:649.02px;overflow:hidden}
-.hero .wrap{position:relative;height:100%;padding-top:72px;z-index:1}
-.tag{display:inline-block;height:35.55px;padding:5px 12px;border:1px solid rgba(245,184,0,.45);border-radius:40px;background:rgba(245,184,0,.14);color:#f5b800;font-weight:600;font-size:14.7px;line-height:23.55px}
-.hero h1{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:62.4px;line-height:67.39px;color:#fff;margin-top:5.3px}
-.hero p{font-size:18.4px;line-height:29.44px;color:#c9d3e3;margin-top:18px;white-space:nowrap}
-.hero .acts{display:flex;gap:12px;margin-top:30.7px}
-.dots{position:absolute;left:0;bottom:26px;display:flex;gap:10px}
-.dots span{width:34px;height:5px;border-radius:3px;background:rgba(255,255,255,.3)}
-.dots span.on{background:#f5b800}
-.hero-photo{position:absolute;top:0;right:0;width:53.49%;height:100%;clip-path:polygon(8.9% 0,100% 0,100% 100%,0 100%)}
-.hero-photo img{position:absolute;left:0.2%;top:0;width:100%;height:147.3%;max-width:none}
+      /* banner */
+      .hero {
+        position: relative;
+        background: #0b1f45;
+        height: 649.02px;
+        overflow: hidden;
+      }
+      .hero .wrap {
+        position: relative;
+        height: 100%;
+        padding-top: 72px;
+        z-index: 1;
+      }
+      .tag {
+        display: inline-block;
+        height: 35.55px;
+        padding: 5px 12px;
+        border: 1px solid rgba(245, 184, 0, 0.45);
+        border-radius: 40px;
+        background: rgba(245, 184, 0, 0.14);
+        color: #f5b800;
+        font-weight: 600;
+        font-size: 14.7px;
+        line-height: 23.55px;
+      }
+      .hero h1 {
+        font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 62.4px;
+        line-height: 67.39px;
+        color: #fff;
+        margin-top: 5.3px;
+      }
+      .hero p {
+        font-size: 18.4px;
+        line-height: 29.44px;
+        color: #c9d3e3;
+        margin-top: 18px;
+        white-space: nowrap;
+      }
+      .hero .acts {
+        display: flex;
+        gap: 12px;
+        margin-top: 30.7px;
+      }
+      .dots {
+        position: absolute;
+        left: 0;
+        bottom: 26px;
+        display: flex;
+        gap: 10px;
+      }
+      .dots span {
+        width: 34px;
+        height: 5px;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.3);
+      }
+      .dots span.on {
+        background: #f5b800;
+      }
+      .hero-photo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 53.49%;
+        height: 100%;
+        clip-path: polygon(8.9% 0, 100% 0, 100% 100%, 0 100%);
+      }
+      .hero-photo img {
+        position: absolute;
+        left: 0.2%;
+        top: 0;
+        width: 100%;
+        height: 147.3%;
+        max-width: none;
+      }
 
-/* selos */
-.seals{background:#fff;border-bottom:1px solid #dce1e8}
-.seals .wrap{display:flex}
-.seal{flex:0 0 295px;height:88.19px;display:flex;align-items:center;gap:11.6px;padding-left:18px;border-right:1px solid #dce1e8;font-weight:600;font-size:17px;line-height:22.1px;color:#0b1f45}
-.seal:last-child{border-right:0}
-.seal b{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:27.2px;line-height:35.36px;color:#1c4fa3}
-.seal span{white-space:nowrap}
+      /* selos */
+      .seals {
+        background: #fff;
+        border-bottom: 1px solid #dce1e8;
+      }
+      .seals .wrap {
+        display: flex;
+      }
+      .seal {
+        flex: 0 0 295px;
+        height: 88.19px;
+        display: flex;
+        align-items: center;
+        gap: 11.6px;
+        padding-left: 18px;
+        border-right: 1px solid #dce1e8;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22.1px;
+        color: #0b1f45;
+      }
+      .seal:last-child {
+        border-right: 0;
+      }
+      .seal b {
+        font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 27.2px;
+        line-height: 35.36px;
+        color: #1c4fa3;
+      }
+      .seal span {
+        white-space: nowrap;
+      }
 
-/* quem somos */
-.about{padding:79.25px 0 87.9px}
-.about .wrap{display:flex;align-items:flex-start;gap:65.75px}
-.about .txt{flex:0 0 556.25px}
-.about .txt h2{margin-top:19.2px}
-.about .p1{font-size:18.4px;line-height:29.44px;color:#5b6474;margin-top:17.8px}
-.about .p2{font-size:17px;line-height:27.2px;color:#1a2230;margin-top:14.1px}
-.about .btn{margin-top:28.7px}
-.about .img{position:relative;flex:0 0 558px;height:418.5px;margin-top:14.86px;border-radius:6px;overflow:hidden}
-.about .img img{position:absolute;left:-4.52%;top:0;width:109.03%;height:100%;max-width:none}
+      /* quem somos */
+      .about {
+        padding: 79.25px 0 87.9px;
+      }
+      .about .wrap {
+        display: flex;
+        align-items: flex-start;
+        gap: 65.75px;
+      }
+      .about .txt {
+        flex: 0 0 556.25px;
+      }
+      .about .txt h2 {
+        margin-top: 19.2px;
+      }
+      .about .p1 {
+        font-size: 18.4px;
+        line-height: 29.44px;
+        color: #5b6474;
+        margin-top: 17.8px;
+      }
+      .about .p2 {
+        font-size: 17px;
+        line-height: 27.2px;
+        color: #1a2230;
+        margin-top: 14.1px;
+      }
+      .about .btn {
+        margin-top: 28.7px;
+      }
+      .about .img {
+        position: relative;
+        flex: 0 0 558px;
+        height: 418.5px;
+        margin-top: 14.86px;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .about .img img {
+        position: absolute;
+        left: -4.52%;
+        top: 0;
+        width: 109.03%;
+        height: 100%;
+        max-width: none;
+      }
 
-/* nossas frentes */
-.fronts{background:#f1f4f8;padding:79.96px 0 88px}
-.fronts .cards{display:flex;gap:28px;margin-top:44.55px}
-.front{position:relative;flex:0 0 576px;height:440px;border-radius:6px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:0 32px 32.6px}
-.front>img{position:absolute;left:0;width:100%;max-width:none}
-.front>img.f1{top:-48.18%;height:196.36%}
-.front>img.f2{top:-8.04%;height:200.5%}
-.front::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,31,69,0) 25%,rgba(11,31,69,.92) 78%)}
-.front>*:not(img){position:relative;z-index:2}
-.front h3{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:32px;line-height:34.56px;color:#fff}
-.front p{font-size:17px;line-height:27.2px;color:#e7ecf4;margin-top:7.7px}
-.front ul{display:flex;gap:8px;list-style:none;margin-top:14.6px}
-.front li{height:30.52px;padding:3px 10px;border:1px solid rgba(255,255,255,.35);border-radius:30px;font-size:14.1px;line-height:22.53px;color:#e7ecf4}
-.front .go{font-weight:600;font-size:17px;line-height:27.2px;color:#f5b800;margin-top:17.4px}
+      /* nossas frentes */
+      .fronts {
+        background: #f1f4f8;
+        padding: 79.96px 0 88px;
+      }
+      .fronts .cards {
+        display: flex;
+        gap: 28px;
+        margin-top: 44.55px;
+      }
+      .front {
+        position: relative;
+        flex: 0 0 576px;
+        height: 440px;
+        border-radius: 6px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 32px 32.6px;
+      }
+      .front > img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        max-width: none;
+      }
+      .front > img.f1 {
+        top: -48.18%;
+        height: 196.36%;
+      }
+      .front > img.f2 {
+        top: -8.04%;
+        height: 200.5%;
+      }
+      .front::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(
+          180deg,
+          rgba(11, 31, 69, 0) 25%,
+          rgba(11, 31, 69, 0.92) 78%
+        );
+      }
+      .front > *:not(img) {
+        position: relative;
+        z-index: 2;
+      }
+      .front h3 {
+        font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 34.56px;
+        color: #fff;
+      }
+      .front p {
+        font-size: 17px;
+        line-height: 27.2px;
+        color: #e7ecf4;
+        margin-top: 7.7px;
+      }
+      .front ul {
+        display: flex;
+        gap: 8px;
+        list-style: none;
+        margin-top: 14.6px;
+      }
+      .front li {
+        height: 30.52px;
+        padding: 3px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 30px;
+        font-size: 14.1px;
+        line-height: 22.53px;
+        color: #e7ecf4;
+      }
+      .front .go {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 27.2px;
+        color: #f5b800;
+        margin-top: 17.4px;
+      }
 
-/* principais serviços */
-.services{padding:79.95px 0 88px}
-.services .sec-head h2{margin-top:19.25px}
-.services .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:42px}
-.services h4{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:19.2px;line-height:23px;color:#0b1f45}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:13.7px}
-.chip{height:49.19px;padding:10px 16px;background:#fff;border:1px solid #dce1e8;border-radius:40px;font-weight:600;font-size:17px;line-height:27.2px;color:#0b1f45;white-space:nowrap}
+      /* principais serviços */
+      .services {
+        padding: 79.95px 0 88px;
+      }
+      .services .sec-head h2 {
+        margin-top: 19.25px;
+      }
+      .services .cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        margin-top: 42px;
+      }
+      .services h4 {
+        font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 19.2px;
+        line-height: 23px;
+        color: #0b1f45;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 13.7px;
+      }
+      .chip {
+        height: 49.19px;
+        padding: 10px 16px;
+        background: #fff;
+        border: 1px solid #dce1e8;
+        border-radius: 40px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 27.2px;
+        color: #0b1f45;
+        white-space: nowrap;
+      }
 
-/* quem atendemos */
-.sectors{background:#f1f4f8;padding:79.96px 0 89px}
-.sectors .intro{font-size:18.4px;line-height:29.44px;color:#5b6474;margin-top:13.3px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.sectors .grid3{margin-top:44.7px}
-.sector{min-height:157.55px;background:#fff;border:1px solid #dce1e8;border-radius:6px;padding:22px 24px 20px}
-.sector h4,.feat h4{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:19.2px;line-height:23px;color:#0b1f45}
-.sector p{font-size:15.2px;line-height:24.32px;color:#5b6474;margin-top:5.6px}
-.sector .tag2{font-weight:600;font-size:12.8px;line-height:20.48px;color:#1c4fa3;margin-top:9.9px}
+      /* quem atendemos */
+      .sectors {
+        background: #f1f4f8;
+        padding: 79.96px 0 89px;
+      }
+      .sectors .intro {
+        font-size: 18.4px;
+        line-height: 29.44px;
+        color: #5b6474;
+        margin-top: 13.3px;
+      }
+      .grid3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .sectors .grid3 {
+        margin-top: 44.7px;
+      }
+      .sector {
+        min-height: 157.55px;
+        background: #fff;
+        border: 1px solid #dce1e8;
+        border-radius: 6px;
+        padding: 22px 24px 20px;
+      }
+      .sector h4,
+      .feat h4 {
+        font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 19.2px;
+        line-height: 23px;
+        color: #0b1f45;
+      }
+      .sector p {
+        font-size: 15.2px;
+        line-height: 24.32px;
+        color: #5b6474;
+        margin-top: 5.6px;
+      }
+      .sector .tag2 {
+        font-weight: 600;
+        font-size: 12.8px;
+        line-height: 20.48px;
+        color: #1c4fa3;
+        margin-top: 9.9px;
+      }
 
-/* diferenciais */
-.dark{background:#0b1f45}
-.diffs{padding:80.95px 0 88px}
-.diffs .grid3{margin-top:44px}
-.feat{min-height:156.02px;background:#132d5e;border-left:4px solid #f5b800;border-radius:0 6px 6px 0;padding:24px 30px 24px 26px}
-.feat h4{color:#fff}
-.feat p{font-size:15.7px;line-height:25.09px;color:#c9d3e3;margin-top:7.7px}
+      /* diferenciais */
+      .dark {
+        background: #0b1f45;
+      }
+      .diffs {
+        padding: 80.95px 0 88px;
+      }
+      .diffs .grid3 {
+        margin-top: 44px;
+      }
+      .feat {
+        min-height: 156.02px;
+        background: #132d5e;
+        border-left: 4px solid #f5b800;
+        border-radius: 0 6px 6px 0;
+        padding: 24px 30px 24px 26px;
+      }
+      .feat h4 {
+        color: #fff;
+      }
+      .feat p {
+        font-size: 15.7px;
+        line-height: 25.09px;
+        color: #c9d3e3;
+        margin-top: 7.7px;
+      }
 
-/* clientes */
-.clients{padding:79.95px 0 88px}
-.clients .sec-head h2{margin-top:19px}
-.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:44px}
-.logos div{height:80px;display:flex;align-items:center;justify-content:center;background:#f7f9fb;border:2px dashed #aeb8c7;border-radius:6px;font-size:14.4px;line-height:23.04px;color:#7c889b}
+      /* clientes */
+      .clients {
+        padding: 79.95px 0 88px;
+      }
+      .clients .sec-head h2 {
+        margin-top: 19px;
+      }
+      .logos {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+        margin-top: 44px;
+      }
+      .logos div {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7f9fb;
+        border: 2px dashed #aeb8c7;
+        border-radius: 6px;
+        font-size: 14.4px;
+        line-height: 23.04px;
+        color: #7c889b;
+      }
 
-/* chamada final */
-.cta{background:#f5b800;height:315.52px}
-.cta .wrap{display:flex;align-items:center;justify-content:space-between;height:100%}
-.cta h2{max-width:351px}
-.cta p{font-size:17px;line-height:27.2px;color:#3d3100;margin-top:9.5px}
-.cta .acts{display:flex;gap:12px}
-.cta .btn-navy{width:195.27px}
-.cta .btn-green{width:200.83px}
+      /* chamada final */
+      .cta {
+        background: #f5b800;
+        height: 315.52px;
+      }
+      .cta .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+      }
+      .cta h2 {
+        max-width: 351px;
+      }
+      .cta p {
+        font-size: 17px;
+        line-height: 27.2px;
+        color: #3d3100;
+        margin-top: 9.5px;
+      }
+      .cta .acts {
+        display: flex;
+        gap: 12px;
+      }
+      .cta .btn-navy {
+        width: 195.27px;
+      }
+      .cta .btn-green {
+        width: 200.83px;
+      }
 
-/* rodapé */
-footer{background:#081631;color:#9fb0cb;padding:54px 0 53px}
-footer .fwrap{width:1180px;max-width:92%;margin:0 auto;position:relative;left:-15.5px}
-.fcols{display:grid;grid-template-columns:316px 319px 335px 210px;min-height:307px}
-footer h4{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:18.4px;line-height:22px;color:#fff;margin-top:6.2px}
-footer ul{list-style:none}
-footer li{font-size:15.2px;line-height:18px;white-space:nowrap}
-.flogo{width:136px;height:80px;object-fit:cover}
-.fabout{font-size:15.2px;line-height:24.32px;width:199px;margin-top:29.2px}
-.faddr{white-space:normal !important;line-height:20.7px !important;width:192px}
-.fsocial{font-weight:600}
-.fbottom{display:flex;justify-content:space-between;border-top:1px solid #1b2c4f;padding:22px 0 19px;font-size:13.6px;line-height:21.76px}
+      /* rodapé */
+      footer {
+        background: #081631;
+        color: #9fb0cb;
+        padding: 54px 0 53px;
+      }
+      footer .fwrap {
+        width: 1180px;
+        max-width: 92%;
+        margin: 0 auto;
+        position: relative;
+        left: -15.5px;
+      }
+      .fcols {
+        display: grid;
+        grid-template-columns: 316px 319px 335px 210px;
+        min-height: 307px;
+      }
+      footer h4 {
+        font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 18.4px;
+        line-height: 22px;
+        color: #fff;
+        margin-top: 6.2px;
+      }
+      footer ul {
+        list-style: none;
+      }
+      footer li {
+        font-size: 15.2px;
+        line-height: 18px;
+        white-space: nowrap;
+      }
+      .flogo {
+        width: 136px;
+        height: 80px;
+        object-fit: cover;
+      }
+      .fabout {
+        font-size: 15.2px;
+        line-height: 24.32px;
+        width: 199px;
+        margin-top: 29.2px;
+      }
+      .faddr {
+        white-space: normal !important;
+        line-height: 20.7px !important;
+        width: 192px;
+      }
+      .fsocial {
+        font-weight: 600;
+      }
+      .fbottom {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #1b2c4f;
+        padding: 22px 0 19px;
+        font-size: 13.6px;
+        line-height: 21.76px;
+      }
 
-/* botão flutuante do WhatsApp */
-.wa-float{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:30px;background:#1fa855;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 8px 12px rgba(0,0,0,.25));z-index:10}
-.wa-float svg{width:32px;height:32px}
+      /* botão flutuante do WhatsApp */
+      .wa-float {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background: #1fa855;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.25));
+        z-index: 10;
+      }
+      .wa-float svg {
+        width: 32px;
+        height: 32px;
+      }
 
-/* telas menores (o Figma só tem a versão desktop; isto é só para não quebrar) */
-@media (max-width:1240px){
-  .topbar .wrap{gap:24px;justify-content:space-between}
-  .seal{flex:1 1 0}
-  .about .txt,.about .img{flex:1 1 0}
-  .front{flex:1 1 0}
-  .fcols{grid-template-columns:1.3fr 1fr 1.1fr 1fr}
-  footer .fwrap{left:0}
-}
-@media (max-width:900px){
-  main p br,main h1 br,main h2 br,.seal br,.fabout br{display:none}
-  main p,main h1,main h2,.hero p,.seal span{white-space:normal;text-wrap:pretty}
-  .topbar .wrap span:first-child,nav{display:none}
-  .hero{height:auto}
-  .hero .wrap{padding:48px 0 70px}
-  .hero-photo{position:relative;width:100%;height:280px;clip-path:none}
-  .seals .wrap,.about .wrap,.fronts .cards,.cta .wrap{flex-direction:column;align-items:stretch}
-  .seal{border-right:0;border-bottom:1px solid #dce1e8}
-  .about .img{height:300px}
-  .services .cols,.grid3{grid-template-columns:1fr}
-  .logos{grid-template-columns:repeat(2,1fr)}
-  .cta{height:auto;padding:56px 0}
-  .cta .acts{margin-top:24px;flex-wrap:wrap}
-  .fcols{grid-template-columns:1fr 1fr;gap:32px}
-  .fbottom{flex-direction:column;gap:6px}
-  .header-cta{display:none}
-}
-</style>
-</head>
-<body>
-
-<header><div class="wrap">
-  <a class="logo" href="index.html"><img src="img/home/logo.jpg" alt="Shalom Serviços e Proteções"></a>
-  <nav><ul>
-    <li><a class="active" href="index.html">Início</a></li>
-    <li><a href="sobre.html">A Shalom</a></li>
-    <li><a href="protecoes-coletivas.html">Proteções Coletivas</a></li>
-    <li><a href="facilities.html">Facilities</a></li>
-    <li><a href="contato.html">Contato</a></li>
-  </ul></nav>
-  <a class="btn btn-yellow header-cta" href="orcamento.html">Solicite orçamento</a>
-</div></header>
-
-<main>
-
-<section class="hero">
-  <div class="hero-photo"><img src="img/home/home-banner.jpg" alt="Edifício em obra com tela de proteção"></div>
-  <div class="wrap">
-    <span class="tag">Proteções Coletivas</span>
-    <h1>Nós não instalamos<br>apenas sistemas.<br>Nós protegemos<br>pessoas.</h1>
-    <p>Telas, redes, linhas de vida e bandejas instaladas conforme<br>as normas, para que cada trabalhador volte para casa em<br>segurança todos os dias.</p>
-    <div class="acts">
-      <a class="btn btn-yellow" href="protecoes-coletivas.html" style="width:209.14px">Conhecer as soluções</a>
-      <a class="btn btn-line" href="orcamento.html" style="width:195.27px">Solicitar orçamento</a>
-    </div>
-    <div class="dots"><span class="on"></span><span></span></div>
-  </div>
-</section>
-
-<section class="seals"><div class="wrap">
-  <div class="seal"><b>NR-18</b><span>Segurança na construção<br>civil</span></div>
-  <div class="seal"><b>NR-35</b><span>Trabalho em altura</span></div>
-  <div class="seal">Equipe própria e fixa no canteiro</div>
-  <div class="seal">Obras, empresas e condomínios</div>
-</div></section>
-
-<section class="about"><div class="wrap">
-  <div class="txt">
-    <span class="kicker">Quem somos</span>
-    <h2>Da obra à operação,<br>uma única parceira</h2>
-    <p class="p1">A Shalom oferece soluções integradas em duas frentes: sistemas de<br>proteção coletiva para a construção civil e serviços de facilities para<br>empresas e condomínios.</p>
-    <p class="p2">Nosso compromisso é proporcionar segurança, organização e eficiência por<br>meio de profissionais qualificados, processos estruturados e uma gestão<br>próxima de cada cliente.</p>
-    <a class="btn btn-navy" href="sobre.html" style="width:180.14px">Conheça a Shalom</a>
-  </div>
-  <div class="img"><img src="img/home/home-quem-somos.jpg" alt="Obra com sistemas de proteção coletiva"></div>
-</div></section>
-
-<section class="fronts"><div class="wrap">
-  <div class="sec-head">
-    <span class="kicker">Nossas frentes</span>
-    <h2 style="margin-top:18.4px">Duas especialidades, o mesmo padrão de<br>cuidado</h2>
-  </div>
-  <div class="cards">
-    <a class="front" href="protecoes-coletivas.html">
-      <img class="f1" src="img/home/frente-protecoes.jpg" alt="">
-      <h3>Proteções Coletivas</h3>
-      <p>Sistemas que mitigam os riscos da construção civil, instalados<br>conforme as técnicas construtivas e as normas regulamentadoras.</p>
-      <ul><li>Tela Fachadeira</li><li>SLQA</li><li>Piso a Piso</li><li>Linha de Vida</li><li>Bandejas</li></ul>
-      <span class="go">Ver soluções de EPC →</span>
-    </a>
-    <a class="front" href="facilities.html">
-      <img class="f2" src="img/home/frente-facilities.jpg" alt="">
-      <h3>Facilities</h3>
-      <p>Serviços terceirizados que mantêm sua empresa ou condomínio<br>seguro, organizado, limpo e acolhedor.</p>
-      <ul><li>Portaria</li><li>Recepção</li><li>Limpeza</li><li>Copa</li></ul>
-      <span class="go">Ver serviços de facilities →</span>
-    </a>
-  </div>
-</div></section>
-
-<section class="services"><div class="wrap">
-  <div class="sec-head">
-    <span class="kicker">Principais serviços</span>
-    <h2>O que a Shalom faz por você</h2>
-  </div>
-  <div class="cols">
-    <div>
-      <h4>Proteções Coletivas</h4>
-      <div class="chips">
-        <a class="chip" href="servicos-epc.html#tela-fachadeira">Tela Fachadeira</a><a class="chip" href="servicos-epc.html#slqa">SLQA Leve e Pesado</a><a class="chip" href="servicos-epc.html#piso-a-piso">Piso a Piso</a>
-        <a class="chip" href="servicos-epc.html#vizinho-calcada">Vizinho e Calçada</a><a class="chip" href="servicos-epc.html#linha-de-vida">Linha de Vida</a><a class="chip" href="servicos-epc.html#ancoragem">Ancoragem e Espera</a>
-        <a class="chip" href="servicos-epc.html#bandeja">Bandeja Primária e Secundária</a>
+      /* telas menores (o Figma só tem a versão desktop; isto é só para não quebrar) */
+      @media (max-width: 1240px) {
+        .topbar .wrap {
+          gap: 24px;
+          justify-content: space-between;
+        }
+        .seal {
+          flex: 1 1 0;
+        }
+        .about .txt,
+        .about .img {
+          flex: 1 1 0;
+        }
+        .front {
+          flex: 1 1 0;
+        }
+        .fcols {
+          grid-template-columns: 1.3fr 1fr 1.1fr 1fr;
+        }
+        footer .fwrap {
+          left: 0;
+        }
+      }
+      @media (max-width: 900px) {
+        main p br,
+        main h1 br,
+        main h2 br,
+        .seal br,
+        .fabout br {
+          display: none;
+        }
+        main p,
+        main h1,
+        main h2,
+        .hero p,
+        .seal span {
+          white-space: normal;
+          text-wrap: pretty;
+        }
+        .topbar .wrap span:first-child,
+        nav {
+          display: none;
+        }
+        .hero {
+          height: auto;
+        }
+        .hero .wrap {
+          padding: 48px 0 70px;
+        }
+        .hero-photo {
+          position: relative;
+          width: 100%;
+          height: 280px;
+          clip-path: none;
+        }
+        .seals .wrap,
+        .about .wrap,
+        .fronts .cards,
+        .cta .wrap {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .seal {
+          border-right: 0;
+          border-bottom: 1px solid #dce1e8;
+        }
+        .about .img {
+          height: 300px;
+        }
+        .services .cols,
+        .grid3 {
+          grid-template-columns: 1fr;
+        }
+        .logos {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .cta {
+          height: auto;
+          padding: 56px 0;
+        }
+        .cta .acts {
+          margin-top: 24px;
+          flex-wrap: wrap;
+        }
+        .fcols {
+          grid-template-columns: 1fr 1fr;
+          gap: 32px;
+        }
+        .fbottom {
+          flex-direction: column;
+          gap: 6px;
+        }
+        .header-cta {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a class="logo" href="index.html"
+          ><img src="img/home/logo.jpg" alt="Shalom Serviços e Proteções"
+        /></a>
+        <nav>
+          <ul>
+            <li><a class="active" href="index.html">Início</a></li>
+            <li><a href="sobre.html">A Shalom</a></li>
+            <li><a href="protecoes-coletivas.html">Proteções Coletivas</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-yellow header-cta" href="orcamento.html"
+          >Solicite orçamento</a
+        >
       </div>
-    </div>
-    <div>
-      <h4>Facilities</h4>
-      <div class="chips">
-        <a class="chip" href="servicos-facilities.html#portaria">Portaria e Controle de Acesso</a><a class="chip" href="servicos-facilities.html#recepcao">Recepção e Apoio Administrativo</a>
-        <a class="chip" href="servicos-facilities.html#limpeza">Limpeza e Conservação</a><a class="chip" href="servicos-facilities.html#copa">Copa</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-photo">
+          <img
+            src="img/home/home-banner.jpg"
+            alt="Edifício em obra com tela de proteção"
+          />
+        </div>
+        <div class="wrap">
+          <span class="tag">Proteções Coletivas</span>
+          <h1>
+            Nós não instalamos<br />apenas sistemas.<br />Nós protegemos<br />pessoas.
+          </h1>
+          <p>
+            Telas, redes, linhas de vida e bandejas instaladas conforme<br />as
+            normas, para que cada trabalhador volte para casa em<br />segurança
+            todos os dias.
+          </p>
+          <div class="acts">
+            <a
+              class="btn btn-yellow"
+              href="protecoes-coletivas.html"
+              style="width: 209.14px"
+              >Conhecer as soluções</a
+            >
+            <a
+              class="btn btn-line"
+              href="orcamento.html"
+              style="width: 195.27px"
+              >Solicitar orçamento</a
+            >
+          </div>
+          <div class="dots"><span class="on"></span><span></span></div>
+        </div>
+      </section>
+
+      <section class="seals">
+        <div class="wrap">
+          <div class="seal">
+            <b>NR-18</b><span>Segurança na construção<br />civil</span>
+          </div>
+          <div class="seal"><b>NR-35</b><span>Trabalho em altura</span></div>
+          <div class="seal">Equipe própria e fixa no canteiro</div>
+          <div class="seal">Obras, empresas e condomínios</div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="wrap">
+          <div class="txt">
+            <span class="kicker">Quem somos</span>
+            <h2>Da obra à operação,<br />uma única parceira</h2>
+            <p class="p1">
+              A Shalom oferece soluções integradas em duas frentes: sistemas
+              de<br />proteção coletiva para a construção civil e serviços de
+              facilities para<br />empresas e condomínios.
+            </p>
+            <p class="p2">
+              Nosso compromisso é proporcionar segurança, organização e
+              eficiência por<br />meio de profissionais qualificados, processos
+              estruturados e uma gestão<br />próxima de cada cliente.
+            </p>
+            <a class="btn btn-navy" href="sobre.html" style="width: 180.14px"
+              >Conheça a Shalom</a
+            >
+          </div>
+          <div class="img">
+            <img
+              src="img/home/home-quem-somos.jpg"
+              alt="Obra com sistemas de proteção coletiva"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="fronts">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="kicker">Nossas frentes</span>
+            <h2 style="margin-top: 18.4px">
+              Duas especialidades, o mesmo padrão de<br />cuidado
+            </h2>
+          </div>
+          <div class="cards">
+            <a class="front" href="protecoes-coletivas.html">
+              <img class="f1" src="img/home/frente-protecoes.jpg" alt="" />
+              <h3>Proteções Coletivas</h3>
+              <p>
+                Sistemas que mitigam os riscos da construção civil,
+                instalados<br />conforme as técnicas construtivas e as normas
+                regulamentadoras.
+              </p>
+              <ul>
+                <li>Tela Fachadeira</li>
+                <li>SLQA</li>
+                <li>Piso a Piso</li>
+                <li>Linha de Vida</li>
+                <li>Bandejas</li>
+              </ul>
+              <span class="go">Ver soluções de EPC →</span>
+            </a>
+            <a class="front" href="facilities.html">
+              <img class="f2" src="img/home/frente-facilities.jpg" alt="" />
+              <h3>Facilities</h3>
+              <p>
+                Serviços terceirizados que mantêm sua empresa ou condomínio<br />seguro,
+                organizado, limpo e acolhedor.
+              </p>
+              <ul>
+                <li>Portaria</li>
+                <li>Recepção</li>
+                <li>Limpeza</li>
+                <li>Copa</li>
+              </ul>
+              <span class="go">Ver serviços de facilities →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="kicker">Principais serviços</span>
+            <h2>O que a Shalom faz por você</h2>
+          </div>
+          <div class="cols">
+            <div>
+              <h4>Proteções Coletivas</h4>
+              <div class="chips">
+                <a class="chip" href="servicos-epc.html#tela-fachadeira"
+                  >Tela Fachadeira</a
+                ><a class="chip" href="servicos-epc.html#slqa"
+                  >SLQA Leve e Pesado</a
+                ><a class="chip" href="servicos-epc.html#piso-a-piso"
+                  >Piso a Piso</a
+                >
+                <a class="chip" href="servicos-epc.html#vizinho-calcada"
+                  >Vizinho e Calçada</a
+                ><a class="chip" href="servicos-epc.html#linha-de-vida"
+                  >Linha de Vida</a
+                ><a class="chip" href="servicos-epc.html#ancoragem"
+                  >Ancoragem e Espera</a
+                >
+                <a class="chip" href="servicos-epc.html#bandeja"
+                  >Bandeja Primária e Secundária</a
+                >
+              </div>
+            </div>
+            <div>
+              <h4>Facilities</h4>
+              <div class="chips">
+                <a class="chip" href="servicos-facilities.html#portaria"
+                  >Portaria e Controle de Acesso</a
+                ><a class="chip" href="servicos-facilities.html#recepcao"
+                  >Recepção e Apoio Administrativo</a
+                >
+                <a class="chip" href="servicos-facilities.html#limpeza"
+                  >Limpeza e Conservação</a
+                ><a class="chip" href="servicos-facilities.html#copa">Copa</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sectors">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="kicker">Áreas de atuação</span>
+            <h2 style="margin-top: 18.7px">Quem atendemos</h2>
+            <p class="intro">
+              Uma construtora pode contar com a Shalom durante a obra e, depois
+              da entrega, na<br />operação do empreendimento.
+            </p>
+          </div>
+          <div class="grid3">
+            <div class="sector">
+              <h4>Construtoras e incorporadoras</h4>
+              <p>Proteção coletiva em todas as fases da obra<br />vertical.</p>
+              <div class="tag2">Proteções Coletivas</div>
+            </div>
+            <div class="sector">
+              <h4>Condomínios residenciais</h4>
+              <p>Portaria, limpeza e conservação das áreas<br />comuns.</p>
+              <div class="tag2">Facilities</div>
+            </div>
+            <div class="sector">
+              <h4>Condomínios comerciais e corporativos</h4>
+              <p>Recepção, controle de acesso, limpeza e copa.</p>
+              <div class="tag2">Facilities</div>
+            </div>
+            <div class="sector">
+              <h4>Indústrias</h4>
+              <p>Serviços de apoio e proteção para trabalhos em<br />altura.</p>
+              <div class="tag2">Proteções Coletivas · Facilities</div>
+            </div>
+            <div class="sector">
+              <h4>Instituições de ensino e saúde</h4>
+              <p>Ambientes limpos, organizados e com acesso<br />controlado.</p>
+              <div class="tag2">Facilities</div>
+            </div>
+            <div class="sector">
+              <h4>Comércio e varejo</h4>
+              <p>Atendimento, limpeza e conservação do espaço.</p>
+              <div class="tag2">Facilities</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="diffs dark">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="kicker">Diferenciais</span>
+            <h2 style="margin-top: 17.8px">Por que escolher a Shalom</h2>
+          </div>
+          <div class="grid3">
+            <div class="feat">
+              <h4>Equipe fixa no canteiro</h4>
+              <p>
+                A mesma equipe acompanha sua obra do início<br />ao fim: conhece
+                o projeto, antecipa demandas<br />e responde rápido.
+              </p>
+            </div>
+            <div class="feat">
+              <h4>Montagem padronizada e conferida</h4>
+              <p>
+                Sem improvisos nem instalações incompletas.<br />Cada sistema é
+                conferido antes da liberação da<br />frente de trabalho.
+              </p>
+            </div>
+            <div class="feat">
+              <h4>Acompanhamento por Ordem de Serviço</h4>
+              <p>
+                Cada atividade é registrada com local, equipe,<br />prioridade e
+                status, para você saber<br />exatamente o que foi feito.
+              </p>
+            </div>
+            <div class="feat">
+              <h4>Conformidade com as NRs</h4>
+              <p>
+                Instalações de acordo com a NR-18 e a NR-35,<br />com foco em
+                segurança, qualidade e prazo.
+              </p>
+            </div>
+            <div class="feat">
+              <h4>Profissionais treinados</h4>
+              <p>
+                Equipes capacitadas, uniformizadas e<br />supervisionadas, com
+                treinamento contínuo<br />por conta da Shalom.
+              </p>
+            </div>
+            <div class="feat">
+              <h4>Atendimento próximo</h4>
+              <p>
+                Relação direta com a gestão da empresa, com<br />transparência e
+                soluções personalizadas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="kicker">Clientes</span>
+            <h2>Quem confia na Shalom</h2>
+          </div>
+          <div class="logos">
+            <div>LOGO CLIENTE</div>
+            <div>LOGO CLIENTE</div>
+            <div>LOGO CLIENTE</div>
+            <div>LOGO CLIENTE</div>
+            <div>LOGO CLIENTE</div>
+            <div>LOGO CLIENTE</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="wrap">
+          <div>
+            <h2>Vamos cuidar da<br />sua obra ou da<br />sua empresa?</h2>
+            <p>Conte o que você precisa e receba uma proposta personalizada.</p>
+          </div>
+          <div class="acts">
+            <a class="btn btn-navy" href="orcamento.html"
+              >Solicitar Orçamento</a
+            >
+            <a
+              class="btn btn-green"
+              href="https://wa.me/5511913463394"
+              target="_blank"
+              rel="noopener"
+              >Falar pelo WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="fwrap">
+        <div class="fcols">
+          <div>
+            <img
+              class="flogo"
+              src="img/home/logo-rodape.png"
+              alt="Shalom Serviços e Proteções"
+            />
+            <p class="fabout">
+              Sistemas de proteção coletiva para a construção civil e serviços
+              de facilities para empresas e condomínios. Excelência em cada
+              detalhe.<br />Confiança em cada serviço.
+            </p>
+          </div>
+          <div>
+            <h4>Proteções Coletivas</h4>
+            <ul>
+              <li style="margin-top: 20px">
+                <a href="servicos-epc.html#tela-fachadeira">Tela Fachadeira</a>
+              </li>
+              <li style="margin-top: 15px">
+                <a href="servicos-epc.html#slqa">SLQA Leve e Pesado</a>
+              </li>
+              <li style="margin-top: 14px">
+                <a href="servicos-epc.html#piso-a-piso">Piso a Piso</a>
+              </li>
+              <li style="margin-top: 11px">
+                <a href="servicos-epc.html#vizinho-calcada"
+                  >Vizinho e Calçada</a
+                >
+              </li>
+              <li style="margin-top: 17px">
+                <a href="servicos-epc.html#linha-de-vida">Linha de Vida</a>
+              </li>
+              <li style="margin-top: 14px">
+                <a href="servicos-epc.html#ancoragem">Ancoragem e Espera</a>
+              </li>
+              <li style="margin-top: 14px">
+                <a href="servicos-epc.html#bandeja"
+                  >Bandeja Primária e Secundária</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Facilities</h4>
+            <ul>
+              <li style="margin-top: 20px">
+                <a href="servicos-facilities.html#portaria"
+                  >Portaria e Controle de Acesso</a
+                >
+              </li>
+              <li style="margin-top: 15px">
+                <a href="servicos-facilities.html#recepcao"
+                  >Recepção e Apoio Administrativo</a
+                >
+              </li>
+              <li style="margin-top: 14px">
+                <a href="servicos-facilities.html#limpeza"
+                  >Limpeza e Conservação</a
+                >
+              </li>
+              <li style="margin-top: 11px">
+                <a href="servicos-facilities.html#copa">Copa</a>
+              </li>
+            </ul>
+            <h4 style="margin-top: 14px">Empresa</h4>
+            <ul>
+              <li style="margin-top: 13px">
+                <a href="sobre.html">A Shalom</a>
+              </li>
+              <li style="margin-top: 14px">
+                <a href="orcamento.html">Solicite orçamento</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contato</h4>
+            <ul>
+              <li style="margin-top: 21px">
+                <a href="tel:+5511913463394">Telefone: (11) 9 1346-3394</a>
+              </li>
+              <li style="margin-top: 14px">
+                <a
+                  href="https://wa.me/5511913463394"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp: (11) 9 1346-3394</a
+                >
+              </li>
+              <li style="margin-top: 14px">
+                <a href="mailto:shalomprotecoes@gmail.com"
+                  >shalomprotecoes@gmail.com</a
+                >
+              </li>
+              <li class="faddr" style="margin-top: 11px">
+                Rua Pedro Molini nº 104, Socorro, São Paulo - SP<br />CEP:04767-010
+              </li>
+              <li class="fsocial" style="margin-top: 36px">
+                <a href="#">Instagram</a> · <a href="#">LinkedIn</a> ·
+                <a href="#">Facebook</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fbottom">
+          <span
+            >© 2026 • Shalom Serviços e Proteções Coletivas LTDA · CNPJ:
+            060.746.871/0001-80</span
+          >
+          <span>Segurança · Confiabilidade · Excelência</span>
+        </div>
       </div>
-    </div>
-  </div>
-</div></section>
+    </footer>
 
-<section class="sectors"><div class="wrap">
-  <div class="sec-head">
-    <span class="kicker">Áreas de atuação</span>
-    <h2 style="margin-top:18.7px">Quem atendemos</h2>
-    <p class="intro">Uma construtora pode contar com a Shalom durante a obra e, depois da entrega, na<br>operação do empreendimento.</p>
-  </div>
-  <div class="grid3">
-    <div class="sector"><h4>Construtoras e incorporadoras</h4><p>Proteção coletiva em todas as fases da obra<br>vertical.</p><div class="tag2">Proteções Coletivas</div></div>
-    <div class="sector"><h4>Condomínios residenciais</h4><p>Portaria, limpeza e conservação das áreas<br>comuns.</p><div class="tag2">Facilities</div></div>
-    <div class="sector"><h4>Condomínios comerciais e corporativos</h4><p>Recepção, controle de acesso, limpeza e copa.</p><div class="tag2">Facilities</div></div>
-    <div class="sector"><h4>Indústrias</h4><p>Serviços de apoio e proteção para trabalhos em<br>altura.</p><div class="tag2">Proteções Coletivas · Facilities</div></div>
-    <div class="sector"><h4>Instituições de ensino e saúde</h4><p>Ambientes limpos, organizados e com acesso<br>controlado.</p><div class="tag2">Facilities</div></div>
-    <div class="sector"><h4>Comércio e varejo</h4><p>Atendimento, limpeza e conservação do espaço.</p><div class="tag2">Facilities</div></div>
-  </div>
-</div></section>
-
-<section class="diffs dark"><div class="wrap">
-  <div class="sec-head">
-    <span class="kicker">Diferenciais</span>
-    <h2 style="margin-top:17.8px">Por que escolher a Shalom</h2>
-  </div>
-  <div class="grid3">
-    <div class="feat"><h4>Equipe fixa no canteiro</h4><p>A mesma equipe acompanha sua obra do início<br>ao fim: conhece o projeto, antecipa demandas<br>e responde rápido.</p></div>
-    <div class="feat"><h4>Montagem padronizada e conferida</h4><p>Sem improvisos nem instalações incompletas.<br>Cada sistema é conferido antes da liberação da<br>frente de trabalho.</p></div>
-    <div class="feat"><h4>Acompanhamento por Ordem de Serviço</h4><p>Cada atividade é registrada com local, equipe,<br>prioridade e status, para você saber<br>exatamente o que foi feito.</p></div>
-    <div class="feat"><h4>Conformidade com as NRs</h4><p>Instalações de acordo com a NR-18 e a NR-35,<br>com foco em segurança, qualidade e prazo.</p></div>
-    <div class="feat"><h4>Profissionais treinados</h4><p>Equipes capacitadas, uniformizadas e<br>supervisionadas, com treinamento contínuo<br>por conta da Shalom.</p></div>
-    <div class="feat"><h4>Atendimento próximo</h4><p>Relação direta com a gestão da empresa, com<br>transparência e soluções personalizadas.</p></div>
-  </div>
-</div></section>
-
-<section class="clients"><div class="wrap">
-  <div class="sec-head">
-    <span class="kicker">Clientes</span>
-    <h2>Quem confia na Shalom</h2>
-  </div>
-  <div class="logos"><div>LOGO CLIENTE</div><div>LOGO CLIENTE</div><div>LOGO CLIENTE</div><div>LOGO CLIENTE</div><div>LOGO CLIENTE</div><div>LOGO CLIENTE</div></div>
-</div></section>
-
-<section class="cta"><div class="wrap">
-  <div>
-    <h2>Vamos cuidar da<br>sua obra ou da<br>sua empresa?</h2>
-    <p>Conte o que você precisa e receba uma proposta personalizada.</p>
-  </div>
-  <div class="acts">
-    <a class="btn btn-navy" href="orcamento.html">Solicitar Orçamento</a>
-    <a class="btn btn-green" href="https://wa.me/5511913463394" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
-  </div>
-</div></section>
-
-</main>
-
-<footer>
-  <div class="fwrap">
-    <div class="fcols">
-      <div>
-        <img class="flogo" src="img/home/logo-rodape.png" alt="Shalom Serviços e Proteções">
-        <p class="fabout">Sistemas de proteção coletiva para a construção civil e serviços de facilities para empresas e condomínios. Excelência em cada detalhe.<br>Confiança em cada serviço.</p>
-      </div>
-      <div>
-        <h4>Proteções Coletivas</h4>
-        <ul>
-          <li style="margin-top:20px"><a href="servicos-epc.html#tela-fachadeira">Tela Fachadeira</a></li>
-          <li style="margin-top:15px"><a href="servicos-epc.html#slqa">SLQA Leve e Pesado</a></li>
-          <li style="margin-top:14px"><a href="servicos-epc.html#piso-a-piso">Piso a Piso</a></li>
-          <li style="margin-top:11px"><a href="servicos-epc.html#vizinho-calcada">Vizinho e Calçada</a></li>
-          <li style="margin-top:17px"><a href="servicos-epc.html#linha-de-vida">Linha de Vida</a></li>
-          <li style="margin-top:14px"><a href="servicos-epc.html#ancoragem">Ancoragem e Espera</a></li>
-          <li style="margin-top:14px"><a href="servicos-epc.html#bandeja">Bandeja Primária e Secundária</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Facilities</h4>
-        <ul>
-          <li style="margin-top:20px"><a href="servicos-facilities.html#portaria">Portaria e Controle de Acesso</a></li>
-          <li style="margin-top:15px"><a href="servicos-facilities.html#recepcao">Recepção e Apoio Administrativo</a></li>
-          <li style="margin-top:14px"><a href="servicos-facilities.html#limpeza">Limpeza e Conservação</a></li>
-          <li style="margin-top:11px"><a href="servicos-facilities.html#copa">Copa</a></li>
-        </ul>
-        <h4 style="margin-top:14px">Empresa</h4>
-        <ul>
-          <li style="margin-top:13px"><a href="sobre.html">A Shalom</a></li>
-          <li style="margin-top:14px"><a href="orcamento.html">Solicite orçamento</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contato</h4>
-        <ul>
-          <li style="margin-top:21px"><a href="tel:+5511913463394">Telefone: (11) 9 1346-3394</a></li>
-          <li style="margin-top:14px"><a href="https://wa.me/5511913463394" target="_blank" rel="noopener">WhatsApp: (11) 9 1346-3394</a></li>
-          <li style="margin-top:14px"><a href="mailto:shalomprotecoes@gmail.com">shalomprotecoes@gmail.com</a></li>
-          <li class="faddr" style="margin-top:11px">Rua Cambuci do Vale, 597 Cidade Dutra - São Paulo - SP<br>CEP: 01532-010</li>
-          <li class="fsocial" style="margin-top:36px"><a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">Facebook</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="fbottom">
-      <span>© 2026 • Shalom Serviços e Proteções Coletivas LTDA · CNPJ: 060.746.871/0001-80</span>
-      <span>Segurança · Confiabilidade · Excelência</span>
-    </div>
-  </div>
-</footer>
-
-<a class="wa-float" href="https://wa.me/5511913463394" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.7 12.7-12.6C28.7 8.6 23 3 16 3zm0 23.1c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.3 1.1 1.2-4.2-.3-.4a10.4 10.4 0 0 1-1.6-5.4C5.3 9.9 10.1 5.2 16 5.2s10.6 4.7 10.6 10.4S21.9 26.1 16 26.1zm5.8-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-4.3-3.7c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.5 2.4 3.6 5.8 5c2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.2-.2-.5-.3z"/></svg></a>
-
-</body>
+    <a
+      class="wa-float"
+      href="https://wa.me/5511913463394"
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar pelo WhatsApp"
+      ><svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+        <path
+          fill="#fff"
+          d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.7 12.7-12.6C28.7 8.6 23 3 16 3zm0 23.1c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.3 1.1 1.2-4.2-.3-.4a10.4 10.4 0 0 1-1.6-5.4C5.3 9.9 10.1 5.2 16 5.2s10.6 4.7 10.6 10.4S21.9 26.1 16 26.1zm5.8-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-4.3-3.7c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.5 2.4 3.6 5.8 5c2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.2-.2-.5-.3z"
+        /></svg
+    ></a>
+  </body>
 </html>
